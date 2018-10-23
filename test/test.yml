@@ -1,0 +1,19 @@
+
+modules: sample_pipeline_collection
+
+stages:
+    - name: sample_pipeline_collectionStage1
+      nprocess: 1
+
+output_dir: ./outputs
+
+inputs:
+    some_input_tag: test/input_data.txt
+
+resume: False
+log_dir: ./test/logs
+pipeline_log: ./test/log.txt
+config: test/config.yml
+
+
+launcher: local
